@@ -311,6 +311,26 @@ section { position: relative; z-index: 1; }
   line-height: 1.15;
 }
 .detail-row__meta { color: var(--ink-soft); font-weight: 600; font-size: 0.95rem; }
+.detail-panel__note {
+  margin-top: 8px;
+  padding: 18px 18px 16px;
+  background: rgba(247, 201, 72, 0.22);
+  border-radius: 16px;
+  border: 2px dashed rgba(236, 91, 42, 0.22);
+  text-align: center;
+}
+.detail-panel__note p {
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+.detail-panel__note-end {
+  margin-top: 10px !important;
+  font-family: "Baloo 2", cursive;
+  font-size: 1.1rem !important;
+  color: var(--orange) !important;
+}
 .detail-panel__map {
   display: block;
   margin-top: 22px;
