@@ -89,17 +89,18 @@ function configurarFormulario() {
     const qtd = Number(quantidade) || 1;
     const pessoasLabel = qtd === 1 ? "1 pessoa" : `${qtd} pessoas`;
 
-    let texto = `🍓 *Confirmação de presença*\n`;
-    texto += `*José faz 1 aninho!* 🎉\n\n`;
-    texto += `👤 *Nome:* ${nome}\n`;
-    texto += `👨‍👩‍👧 *Quantidade:* ${pessoasLabel}\n`;
-    texto += `📅 *Data:* 12/07/2026 (domingo)\n`;
-    texto += `⏰ *Horário:* 15:00\n`;
-    texto += `📍 *Local:* Parque de Águas Claras\n`;
+    let texto = `*Confirmação de presença*\n`;
+    texto += `*José faz 1 aninho!* \n\n`;
+    texto += `*Nome:* ${nome}\n`;
+    texto += `*Quantidade:* ${pessoasLabel}\n`;
+    texto += `*Data:* 12/07/2026 (domingo)\n`;
+    texto += `*Detalhe do local:* É perto do estacionamento do adorável café\n`;
+    texto += `*Horário:* 15:00\n`;
+    texto += `*Local:* Parque de Águas Claras\n`;
     texto += `Av. das Castanheiras — Águas Claras\n`;
-    if (presente) texto += `\n🎁 *Presente:* ${presente}\n`;
-    if (mensagem) texto += `\n💬 *Recadinho:*\n_${mensagem}_\n`;
-    texto += `\n💛 Contamos com a presença!`;
+    if (presente) texto += `\n*Presente:* ${presente}\n`;
+    if (mensagem) texto += `\n*Recadinho:*\n_${mensagem}_\n`;
+    texto += `\n*Contamos com a presença!*`;
 
     const url = `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(texto)}`;
     window.open(url, "_blank");
