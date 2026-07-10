@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>José faz 1 aninho! 🎉</title>
+  <meta name="description" content="Convite de aniversário de 1 ano do José. Venha comemorar com a gente!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Frutas decorativas flutuando ao fundo -->
+  <div class="fruit-field" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav__bar">
+      <a class="nav__logo" href="#home">
+        <span class="nav__logo-emoji">🍓</span>
+        <span class="nav__logo-text">José <b>faz 1</b></span>
+      </a>
+      <nav class="nav__links">
+        <a href="#detalhes">Festa</a>
+        <a href="#fotos">Fotos</a>
+        <a href="#presentes">Presentes</a>
+        <a href="#confirmar" class="nav__cta">Confirmar</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HOME / HERO -->
+  <section id="home" class="hero">
+    <div class="hero__inner">
+      <div class="hero__text">
+        <span class="hero__badge">🎂 Você está convidado!</span>
+        <h1 class="hero__title">José <span>faz</span> <em>1</em></h1>
+        <p class="hero__subtitle">Um piquenique cheio de frutinhas, sorrisos e muita alegria. Vem comemorar o primeiro aninho do nosso pequeno!</p>
+        <div class="hero__cta">
+          <a href="#confirmar" class="btn btn--primary">Confirmar presença</a>
+          <a href="#presentes" class="btn btn--ghost">Ver lista de presentes</a>
+        </div>
+      </div>
+      <div class="hero__photo">
+        <div class="photo-frame">
+          <img src="assets/jose.png" alt="Convite do José faz 1 ano" />
+        </div>
+      </div>
+    </div>
+    <div class="stripes" aria-hidden="true"></div>
+  </section>
+
+  <!-- DETALHES -->
+  <section id="detalhes" class="details">
+    <h2 class="section-title">Detalhes da festa</h2>
+    <p class="section-sub">Tudo que você precisa saber para não perder essa comemoração 🍉</p>
+
+    <div class="detail-panel">
+      <div class="detail-panel__ribbon">🎈 Piquenique no parque 🎈</div>
+
+      <ul class="detail-list">
+        <li class="detail-row">
+          <span class="detail-row__icon detail-row__icon--red">📅</span>
+          <div class="detail-row__text">
+            <span class="detail-row__label">Data</span>
+            <strong class="detail-row__value">12 de julho de 2026</strong>
+            <span class="detail-row__meta">Domingo</span>
+          </div>
+        </li>
+        <li class="detail-row">
+          <span class="detail-row__icon detail-row__icon--blue">⏰</span>
+          <div class="detail-row__text">
+            <span class="detail-row__label">Horário</span>
+            <strong class="detail-row__value">Às 15:00</strong>
+            <span class="detail-row__meta">Chegue pontualmente 🎉</span>
+          </div>
+        </li>
+        <li class="detail-row">
+          <span class="detail-row__icon detail-row__icon--green">📍</span>
+          <div class="detail-row__text">
+            <span class="detail-row__label">Local</span>
+            <strong class="detail-row__value">Parque de Águas Claras</strong>
+            <span class="detail-row__meta">Av. das Castanheiras — Águas Claras</span>
+          </div>
+        </li>
+      </ul>
+
+      <a class="detail-panel__map" href="https://www.google.com/maps/search/?api=1&query=Parque+de+Águas+Claras+Av.+das+Castanheiras" target="_blank" rel="noopener">📍 Abrir no mapa</a>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="fotos" class="gallery">
+    <h2 class="section-title">Momentos do Zé</h2>
+    <p class="section-sub">Um ano de sorrisos, descobertas e muita fofura 📸</p>
+    <div class="gallery__grid">
+      <figure class="polaroid polaroid--a">
+        <img src="assets/ze-1.png" alt="Zé sorrindo de pertinho" loading="lazy" />
+        <figcaption>Puro sorriso 😄</figcaption>
+      </figure>
+      <figure class="polaroid polaroid--b">
+        <img src="assets/ze-2.png" alt="Zé estiloso de óculos escuros" loading="lazy" />
+        <figcaption>Estiloso 😎</figcaption>
+      </figure>
+      <figure class="polaroid polaroid--c">
+        <img src="assets/ze-3.png" alt="Zé no berço listrado" loading="lazy" />
+        <figcaption>Fofura total 🍼</figcaption>
+      </figure>
+      <figure class="polaroid polaroid--d">
+        <img src="assets/ze-4.png" alt="Zé dando risada" loading="lazy" />
+        <figcaption>Gargalhada 🥰</figcaption>
+      </figure>
+      <figure class="polaroid polaroid--d">
+        <img src="assets/ze-6.png" alt="Zé dando risada" loading="lazy" />
+        <figcaption>risada 🥰</figcaption>
+      </figure>
+      <figure class="polaroid polaroid--d">
+        <img src="assets/ze-7.png" alt="Zé dando risada" loading="lazy" />
+        <figcaption>papai 🥰</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- PRESENTES -->
+  <section id="presentes" class="gifts">
+    <h2 class="section-title">Lista de presentes</h2>
+    <p class="section-sub">Escolheu um mimo? Clique para abrir na Shopee. Toda lembrança é bem-vinda! 🎁</p>
+    <div id="gift-grid" class="gift-grid"></div>
+  </section>
+
+  <!-- CONFIRMAR -->
+  <section id="confirmar" class="rsvp">
+    <div class="rsvp__box">
+      <h2 class="section-title">Confirmar presença</h2>
+      <p class="section-sub">Preencha e sua confirmação será enviada direto pelo WhatsApp 💛</p>
+      <form id="rsvp-form" class="rsvp__form" novalidate>
+        <div class="field">
+          <label for="nome">Seu nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Como podemos te chamar?" required />
+        </div>
+        <div class="field">
+          <label for="quantidade">Quantas pessoas vão?</label>
+          <input type="number" id="quantidade" name="quantidade" min="1" value="1" required />
+        </div>
+        <div class="field">
+          <label for="presente">Presente escolhido (opcional)</label>
+          <select id="presente" name="presente">
+            <option value="">Ainda vou escolher</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="mensagem">Mensagem pro José (opcional)</label>
+          <textarea id="mensagem" name="mensagem" rows="3" placeholder="Deixe um recadinho carinhoso"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--wide">Confirmar pelo WhatsApp</button>
+        <p class="rsvp__hint" id="rsvp-hint"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Feito com 💛 para o José • 1 aninho 🍓🍌🍇🍉</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
